@@ -10,6 +10,8 @@ import javax.swing.border.Border;
 import javax.swing.Box;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import java.awt.event.*;
+import javax.swing.*;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -17,7 +19,21 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  * @author Sourav
  */
-
+class pawn
+{
+    public int value;
+    public int pos;
+    public int col;
+    public int inside;
+    pawn(int a,int b,int c,int d)
+    {
+        value=a;
+        pos=b;
+        col=c;
+        inside=d;
+    }
+    
+}
 public class UI1 extends javax.swing.JFrame{
 
     /**
@@ -49,9 +65,154 @@ public class UI1 extends javax.swing.JFrame{
         b4.setIcon(iconblue);
         
     }
-    void play(int distance,int runner)
+   
+  
+    
+    void displayscreen(pawn x1)
     {
+        Icon whatcolour=null;
+        switch(x1.col)
+        {
+            case 1:whatcolour=iconyellow;break;
+            case 2:whatcolour=iconred;break;
+            case 3:whatcolour=iconblue;break;
+            case 4:whatcolour=icongreen;break;
+        }
+        switch(x1.pos)
+        {
+            case 1:yr1.setIcon(whatcolour);yr1.setEnabled(true);currentval=x1.value;break;
+            case 14:rb1.setIcon(whatcolour);rb1.setEnabled(true);currentval=x1.value;break;
+            case 27:bg1.setIcon(whatcolour);bg1.setEnabled(true);currentval=x1.value;break;
+            case 40:gy1.setIcon(whatcolour);gy1.setEnabled(true);currentval=x1.value;break;
+            
+            case 2:yr2.setIcon(whatcolour);yr2.setEnabled(true);currentval=x1.value;break;
+            case 3:yr3.setIcon(whatcolour);yr3.setEnabled(true);currentval=x1.value;break;
+            case 4:yr4.setIcon(whatcolour);yr4.setEnabled(true);currentval=x1.value;break;
+            case 5:yr5.setIcon(whatcolour);yr5.setEnabled(true);currentval=x1.value;break;
+            case 6:yr6.setIcon(whatcolour);yr6.setEnabled(true);currentval=x1.value;break;
+            case 7:yr7.setIcon(whatcolour);yr7.setEnabled(true);currentval=x1.value;break;
+            case 8:yr8.setIcon(whatcolour);yr8.setEnabled(true);currentval=x1.value;break;
+            case 9:yr9.setIcon(whatcolour);yr9.setEnabled(true);currentval=x1.value;break;
+            case 10:yr10.setIcon(whatcolour);yr10.setEnabled(true);currentval=x1.value;break;
+            case 11:yr11.setIcon(whatcolour);yr11.setEnabled(true);currentval=x1.value;break;
+            case 12:yr12.setIcon(whatcolour);yr12.setEnabled(true);currentval=x1.value;break;
+            case 13:yr13.setIcon(whatcolour);yr13.setEnabled(true);currentval=x1.value;break;
+            
+            case 15:rb2.setIcon(whatcolour);rb2.setEnabled(true);currentval=x1.value;break;
+            case 16:rb3.setIcon(whatcolour);rb3.setEnabled(true);currentval=x1.value;break;
+            case 17:rb4.setIcon(whatcolour);rb4.setEnabled(true);currentval=x1.value;break;
+            case 18:rb5.setIcon(whatcolour);rb5.setEnabled(true);currentval=x1.value;break;
+            case 19:rb6.setIcon(whatcolour);rb6.setEnabled(true);currentval=x1.value;break;
+            case 20:rb7.setIcon(whatcolour);rb7.setEnabled(true);currentval=x1.value;break;
+            case 21:rb8.setIcon(whatcolour);rb8.setEnabled(true);currentval=x1.value;break;
+            case 22:rb9.setIcon(whatcolour);rb9.setEnabled(true);currentval=x1.value;break;
+            case 23:rb10.setIcon(whatcolour);rb10.setEnabled(true);currentval=x1.value;break;
+            case 24:rb11.setIcon(whatcolour);rb11.setEnabled(true);currentval=x1.value;break;
+            case 25:rb12.setIcon(whatcolour);rb12.setEnabled(true);currentval=x1.value;break;
+            case 26:rb13.setIcon(whatcolour);rb13.setEnabled(true);currentval=x1.value;break;
+            
+            case 28:bg2.setIcon(whatcolour);bg2.setEnabled(true);currentval=x1.value;break;
+            case 29:bg3.setIcon(whatcolour);bg3.setEnabled(true);currentval=x1.value;break;
+            case 30:bg4.setIcon(whatcolour);bg4.setEnabled(true);currentval=x1.value;break;
+            case 31:bg5.setIcon(whatcolour);bg5.setEnabled(true);currentval=x1.value;break;
+            case 32:bg6.setIcon(whatcolour);bg6.setEnabled(true);currentval=x1.value;break;
+            case 33:bg7.setIcon(whatcolour);bg7.setEnabled(true);currentval=x1.value;break;
+            case 34:bg8.setIcon(whatcolour);bg8.setEnabled(true);currentval=x1.value;break;
+            case 35:bg9.setIcon(whatcolour);bg9.setEnabled(true);currentval=x1.value;break;
+            case 36:bg10.setIcon(whatcolour);bg10.setEnabled(true);currentval=x1.value;break;
+            case 37:bg11.setIcon(whatcolour);bg11.setEnabled(true);currentval=x1.value;break;
+            case 38:bg12.setIcon(whatcolour);bg12.setEnabled(true);currentval=x1.value;break;
+            case 39:bg13.setIcon(whatcolour);bg13.setEnabled(true);currentval=x1.value;break;
+            
+            case 41:gy2.setIcon(whatcolour);gy2.setEnabled(true);break;
+            case 42:gy3.setIcon(whatcolour);gy3.setEnabled(true);break;
+            case 43:gy4.setIcon(whatcolour);gy4.setEnabled(true);break;
+            case 44:gy5.setIcon(whatcolour);gy5.setEnabled(true);break;
+            case 45:gy6.setIcon(whatcolour);gy6.setEnabled(true);break;
+            case 46:gy7.setIcon(whatcolour);gy7.setEnabled(true);break;
+            case 47:gy8.setIcon(whatcolour);gy8.setEnabled(true);break;
+            case 48:gy9.setIcon(whatcolour);gy9.setEnabled(true);break;
+            case 49:gy10.setIcon(whatcolour);gy10.setEnabled(true);break;
+            case 50:gy11.setIcon(whatcolour);gy11.setEnabled(true);break;
+            case 51:gy12.setIcon(whatcolour);gy12.setEnabled(true);break;
+            case 52:gy13.setIcon(whatcolour);gy13.setEnabled(true);break;
+            
+        }
         
+        
+    }
+    void displayboard()
+    {
+        displayscreen(yy1);
+        displayscreen(yy2);
+        displayscreen(yy3);
+        displayscreen(yy4);
+        displayscreen(rr1);
+        displayscreen(rr2);
+        displayscreen(rr3);
+        displayscreen(rr4);
+        displayscreen(bb1);
+        displayscreen(bb2);
+        displayscreen(bb3);
+        displayscreen(bb4);
+        displayscreen(gg1);
+        displayscreen(gg2);
+        displayscreen(gg3);
+        displayscreen(gg4);
+        
+    }
+    pawn play(pawn p1,int distance)
+    {
+       if(p1.inside==0)
+       {
+           switch(p1.col)
+           { 
+               case 1:p1.pos=1;break;
+               case 2:p1.pos=14;break;
+               case 3:p1.pos=27;break;
+               case 4:p1.pos=40;break;
+           }
+           //T1.setText(" "+p1.pos);
+           displayboard();
+           p1.inside=1;
+           
+       }
+       else
+       {
+           p1.pos=p1.pos+distance;
+         /*  if(p1.pos>52)
+               p1.pos=(p1.pos)-52;*/
+           displayboard();
+       }
+       
+        
+        
+        T2.setText(""+p1.inside);
+        jButton5.setEnabled(true);
+        return p1;
+    }
+    void valuecheck(int val,int far)
+    {
+        switch(val)
+        {
+            case 1:yy1=play(yy1,far);break;
+            case 2:yy2=play(yy2,far);break;
+            case 3:yy3=play(yy3,far);break;
+            case 4:yy4=play(yy4,far);break;
+            case 5:rr1=play(rr1,far);break;
+            case 6:rr2=play(rr2,far);break;
+            case 7:rr3=play(rr3,far);break;
+            case 8:rr4=play(rr4,far);break;
+            case 9:bb1=play(bb1,far);break;
+            case 10:bb2=play(bb2,far);break;
+            case 11:bb3=play(bb3,far);break;
+            case 12:bb4=play(bb4,far);break;
+            case 13:gg1=play(gg1,far);break;
+            case 14:gg2=play(gg2,far);break;
+            case 15:gg3=play(gg3,far);break;
+            case 16:gg4=play(gg4,far);break;
+            
+        }
     }
    void disableAll()
    {
@@ -152,46 +313,81 @@ public class UI1 extends javax.swing.JFrame{
    {
        switch(chance)
         {
-            case 0:
+            case 0://Yellow Plays
             {
                 disableAll();
-                
-                if(dicenum!=6)
+                T1.setText("Player : Yellow");
+                T1.setBackground(new java.awt.Color(255, 255, 0));
+                if(howfar!=6)
                     chance++;
-                else if(dicenum==6)
-                    enableYellow(5);
+                switch(howfar)
+                    {
+                    case 1:break;
+                    case 2:break;
+                    case 3:break;
+                    case 4:break;
+                    case 5:break;
+                    case 6:enableYellow(5);break;
+                
+                    }
+                
                 break;
             }
                
-            case 1:
+            case 1://Red Plays
             {
                 disableAll();
-                
-                if(dicenum!=6)
+                T1.setText("Player : Red");
+                T1.setBackground(new java.awt.Color(204, 0, 51));
+                if(howfar!=6)
                     chance++;
-                else if(dicenum==6)
-                    enableRed(5);
+                switch(howfar)
+                {
+                    case 1:break;
+                    case 2:break;
+                    case 3:break;
+                    case 4:break;
+                    case 5:break;
+                    case 6:enableRed(5);break;
+                    
+                }
                 break;
             }
                
-            case 2:
+            case 2://Blue Plays
             {
                 disableAll();
-               
+                T1.setText("Player : Blue");
+                T1.setBackground(new java.awt.Color(51, 0, 204));
                  if(dicenum!=6)
                     chance++;
-                 else if(dicenum==6)
-                     enableBlue(5);
+                 switch(howfar)
+                 {
+                    case 1:break;
+                    case 2:break;
+                    case 3:break;
+                    case 4:break;
+                    case 5:break;
+                    case 6:enableBlue(5);break;
+                 }
                  break;
             }
-            case 3:
+            case 3://Green Plays
             {
                 disableAll();
-               
+                T1.setText("Player : Green");
+                T1.setBackground(new java.awt.Color(51, 153, 0));
                  if(dicenum!=6)
                     chance=0;
-                 else if(dicenum==6)
-                      enableGreen(5);
+                 switch(howfar)
+                 {
+                    case 1:break;
+                    case 2:break;
+                    case 3:break;
+                    case 4:break;
+                    case 5:break;
+                    case 6:enableGreen(5);break;
+                 }
                  break;
             }
     
@@ -354,6 +550,8 @@ public class UI1 extends javax.swing.JFrame{
         jButton89 = new javax.swing.JButton();
         jButton90 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        T1 = new javax.swing.JTextField();
+        T2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ludo");
@@ -372,15 +570,35 @@ public class UI1 extends javax.swing.JFrame{
 
         r1.setBackground(new java.awt.Color(204, 204, 204));
         r1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        r1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r1ActionPerformed(evt);
+            }
+        });
         panel9.add(r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
         r3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        r3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r3ActionPerformed(evt);
+            }
+        });
         panel9.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
         r2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        r2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r2ActionPerformed(evt);
+            }
+        });
         panel9.add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
         r4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        r4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                r4ActionPerformed(evt);
+            }
+        });
         panel9.add(r4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 100, 100));
 
         panel3.add(panel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 200, 200));
@@ -394,15 +612,35 @@ public class UI1 extends javax.swing.JFrame{
         panel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         y1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        y1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                y1ActionPerformed(evt);
+            }
+        });
         panel12.add(y1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
         y2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        y2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                y2ActionPerformed(evt);
+            }
+        });
         panel12.add(y2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
         y3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        y3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                y3ActionPerformed(evt);
+            }
+        });
         panel12.add(y3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
         y4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        y4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                y4ActionPerformed(evt);
+            }
+        });
         panel12.add(y4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 100, 100));
 
         panel2.add(panel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 200, 200));
@@ -416,22 +654,58 @@ public class UI1 extends javax.swing.JFrame{
         panel16.setBackground(new java.awt.Color(102, 102, 255));
         panel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        rb11.setEnabled(false);
         rb11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb11ActionPerformed(evt);
+            }
+        });
         panel16.add(rb11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 70));
 
+        rb10.setEnabled(false);
         rb10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb10ActionPerformed(evt);
+            }
+        });
         panel16.add(rb10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 70, 70));
 
+        rb9.setEnabled(false);
         rb9.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 5)));
+        rb9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb9ActionPerformed(evt);
+            }
+        });
         panel16.add(rb9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 70, 70));
 
+        rb8.setEnabled(false);
         rb8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb8ActionPerformed(evt);
+            }
+        });
         panel16.add(rb8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 70, 70));
 
+        rb7.setEnabled(false);
         rb7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb7ActionPerformed(evt);
+            }
+        });
         panel16.add(rb7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 70, 70));
 
+        rb6.setEnabled(false);
         rb6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb6ActionPerformed(evt);
+            }
+        });
         panel16.add(rb6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 70, 50));
 
         jPanel1.add(panel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 400));
@@ -439,7 +713,13 @@ public class UI1 extends javax.swing.JFrame{
         panel17.setBackground(new java.awt.Color(0, 204, 255));
         panel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        rb12.setEnabled(false);
         rb12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb12ActionPerformed(evt);
+            }
+        });
         panel17.add(rb12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 70));
 
         jButton66.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 204), 5)));
@@ -462,22 +742,58 @@ public class UI1 extends javax.swing.JFrame{
         panel18.setBackground(new java.awt.Color(102, 102, 255));
         panel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        rb13.setEnabled(false);
         rb13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb13ActionPerformed(evt);
+            }
+        });
         panel18.add(rb13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 70));
 
+        bg1.setEnabled(false);
         bg1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 204), 5)));
+        bg1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg1ActionPerformed(evt);
+            }
+        });
         panel18.add(bg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 70, 70));
 
+        bg2.setEnabled(false);
         bg2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg2ActionPerformed(evt);
+            }
+        });
         panel18.add(bg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 70, 70));
 
+        bg3.setEnabled(false);
         bg3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg3ActionPerformed(evt);
+            }
+        });
         panel18.add(bg3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 70, 70));
 
+        bg4.setEnabled(false);
         bg4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg4ActionPerformed(evt);
+            }
+        });
         panel18.add(bg4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 70, 70));
 
+        bg5.setEnabled(false);
         bg5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg5ActionPerformed(evt);
+            }
+        });
         panel18.add(bg5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 70, 50));
 
         jPanel1.add(panel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 70, 400));
@@ -491,15 +807,35 @@ public class UI1 extends javax.swing.JFrame{
         panel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         b1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        b1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1ActionPerformed(evt);
+            }
+        });
         panel10.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
         b2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        b2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b2ActionPerformed(evt);
+            }
+        });
         panel10.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
         b3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        b3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b3ActionPerformed(evt);
+            }
+        });
         panel10.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
         b4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        b4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b4ActionPerformed(evt);
+            }
+        });
         panel10.add(b4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 100, 100));
 
         panel4.add(panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 200, 200));
@@ -512,6 +848,7 @@ public class UI1 extends javax.swing.JFrame{
         panel13.setBackground(new java.awt.Color(255, 51, 153));
         panel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        yr13.setEnabled(false);
         yr13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         yr13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -520,19 +857,49 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel13.add(yr13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 70));
 
+        rb1.setEnabled(false);
         rb1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 51), 5)));
+        rb1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb1ActionPerformed(evt);
+            }
+        });
         panel13.add(rb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 70, 70));
 
+        rb2.setEnabled(false);
         rb2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb2ActionPerformed(evt);
+            }
+        });
         panel13.add(rb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 70, 70));
 
+        rb3.setEnabled(false);
         rb3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb3ActionPerformed(evt);
+            }
+        });
         panel13.add(rb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 70, 70));
 
+        rb4.setEnabled(false);
         rb4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb4ActionPerformed(evt);
+            }
+        });
         panel13.add(rb4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 70, 70));
 
+        rb5.setEnabled(false);
         rb5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        rb5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rb5ActionPerformed(evt);
+            }
+        });
         panel13.add(rb5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 50, 70));
 
         panel5.add(panel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 70));
@@ -540,7 +907,13 @@ public class UI1 extends javax.swing.JFrame{
         panel14.setBackground(new java.awt.Color(255, 102, 204));
         panel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        yr12.setEnabled(false);
         yr12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr12ActionPerformed(evt);
+            }
+        });
         panel14.add(yr12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 60));
 
         jButton84.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0), 5)));
@@ -563,22 +936,58 @@ public class UI1 extends javax.swing.JFrame{
         panel15.setBackground(new java.awt.Color(255, 51, 153));
         panel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        yr11.setEnabled(false);
         yr11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr11ActionPerformed(evt);
+            }
+        });
         panel15.add(yr11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 70));
 
+        yr10.setEnabled(false);
         yr10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr10ActionPerformed(evt);
+            }
+        });
         panel15.add(yr10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 70, 70));
 
+        yr9.setEnabled(false);
         yr9.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 8)));
+        yr9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr9ActionPerformed(evt);
+            }
+        });
         panel15.add(yr9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 70, 70));
 
+        yr8.setEnabled(false);
         yr8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr8ActionPerformed(evt);
+            }
+        });
         panel15.add(yr8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 70, 70));
 
+        yr7.setEnabled(false);
         yr7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr7ActionPerformed(evt);
+            }
+        });
         panel15.add(yr7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 70, 70));
 
+        yr6.setEnabled(false);
         yr6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr6ActionPerformed(evt);
+            }
+        });
         panel15.add(yr6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 50, 70));
 
         panel5.add(panel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 400, 70));
@@ -591,22 +1000,58 @@ public class UI1 extends javax.swing.JFrame{
         panel19.setBackground(new java.awt.Color(0, 102, 0));
         panel19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        bg6.setEnabled(false);
         bg6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg6ActionPerformed(evt);
+            }
+        });
         panel19.add(bg6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 70));
 
+        bg7.setEnabled(false);
         bg7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg7ActionPerformed(evt);
+            }
+        });
         panel19.add(bg7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 70, 70));
 
+        bg8.setEnabled(false);
         bg8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg8ActionPerformed(evt);
+            }
+        });
         panel19.add(bg8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 70, 70));
 
+        bg9.setEnabled(false);
         bg9.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 8)));
+        bg9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg9ActionPerformed(evt);
+            }
+        });
         panel19.add(bg9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 70, 70));
 
+        bg10.setEnabled(false);
         bg10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg10ActionPerformed(evt);
+            }
+        });
         panel19.add(bg10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 70, 70));
 
+        bg11.setEnabled(false);
         bg11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg11ActionPerformed(evt);
+            }
+        });
         panel19.add(bg11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 70, 70));
 
         panel6.add(panel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 70));
@@ -629,7 +1074,13 @@ public class UI1 extends javax.swing.JFrame{
         jButton75.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 152, 0), 5)));
         panel20.add(jButton75, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 70, 60));
 
+        bg12.setEnabled(false);
         bg12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg12ActionPerformed(evt);
+            }
+        });
         panel20.add(bg12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 70, 60));
 
         panel6.add(panel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 400, 60));
@@ -637,22 +1088,58 @@ public class UI1 extends javax.swing.JFrame{
         panel21.setBackground(new java.awt.Color(51, 102, 0));
         panel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        gy5.setEnabled(false);
         gy5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy5ActionPerformed(evt);
+            }
+        });
         panel21.add(gy5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 70));
 
+        gy4.setEnabled(false);
         gy4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy4ActionPerformed(evt);
+            }
+        });
         panel21.add(gy4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 70, 70));
 
+        gy3.setEnabled(false);
         gy3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy3ActionPerformed(evt);
+            }
+        });
         panel21.add(gy3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 70, 70));
 
+        gy2.setEnabled(false);
         gy2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy2ActionPerformed(evt);
+            }
+        });
         panel21.add(gy2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 70, 70));
 
+        gy1.setEnabled(false);
         gy1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 153, 0), 5)));
+        gy1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy1ActionPerformed(evt);
+            }
+        });
         panel21.add(gy1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 70, 70));
 
+        bg13.setEnabled(false);
         bg13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        bg13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bg13ActionPerformed(evt);
+            }
+        });
         panel21.add(bg13, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 70, 70));
 
         panel6.add(panel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 400, 70));
@@ -666,15 +1153,35 @@ public class UI1 extends javax.swing.JFrame{
         panel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         g1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        g1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                g1ActionPerformed(evt);
+            }
+        });
         panel11.add(g1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
         g2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        g2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                g2ActionPerformed(evt);
+            }
+        });
         panel11.add(g2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
         g3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        g3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                g3ActionPerformed(evt);
+            }
+        });
         panel11.add(g3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
         g4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
+        g4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                g4ActionPerformed(evt);
+            }
+        });
         panel11.add(g4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 100, 100));
 
         panel7.add(panel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 200, 200));
@@ -687,22 +1194,58 @@ public class UI1 extends javax.swing.JFrame{
         panel22.setBackground(new java.awt.Color(255, 204, 0));
         panel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        yr5.setEnabled(false);
         yr5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr5ActionPerformed(evt);
+            }
+        });
         panel22.add(yr5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 50));
 
+        yr4.setEnabled(false);
         yr4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr4ActionPerformed(evt);
+            }
+        });
         panel22.add(yr4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 70, 70));
 
+        yr3.setEnabled(false);
         yr3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr3ActionPerformed(evt);
+            }
+        });
         panel22.add(yr3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 70, 70));
 
+        yr2.setEnabled(false);
         yr2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        yr2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr2ActionPerformed(evt);
+            }
+        });
         panel22.add(yr2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 70, 70));
 
+        yr1.setEnabled(false);
         yr1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 0), 5)));
+        yr1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yr1ActionPerformed(evt);
+            }
+        });
         panel22.add(yr1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 70, 70));
 
+        gy13.setEnabled(false);
         gy13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy13ActionPerformed(evt);
+            }
+        });
         panel22.add(gy13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 70, 70));
 
         panel8.add(panel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 400));
@@ -725,7 +1268,13 @@ public class UI1 extends javax.swing.JFrame{
         jButton81.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 0), 5)));
         panel23.add(jButton81, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 60, 70));
 
+        gy12.setEnabled(false);
         gy12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy12ActionPerformed(evt);
+            }
+        });
         panel23.add(gy12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 60, 70));
 
         panel8.add(panel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 60, 400));
@@ -733,22 +1282,58 @@ public class UI1 extends javax.swing.JFrame{
         panel24.setBackground(new java.awt.Color(255, 204, 0));
         panel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        gy6.setEnabled(false);
         gy6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy6ActionPerformed(evt);
+            }
+        });
         panel24.add(gy6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 50));
 
+        gy7.setEnabled(false);
         gy7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy7ActionPerformed(evt);
+            }
+        });
         panel24.add(gy7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 70, 70));
 
+        gy8.setEnabled(false);
         gy8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy8ActionPerformed(evt);
+            }
+        });
         panel24.add(gy8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 70, 70));
 
+        gy9.setEnabled(false);
         gy9.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 8)));
+        gy9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy9ActionPerformed(evt);
+            }
+        });
         panel24.add(gy9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 70, 70));
 
+        gy10.setEnabled(false);
         gy10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy10ActionPerformed(evt);
+            }
+        });
         panel24.add(gy10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 70, 70));
 
+        gy11.setEnabled(false);
         gy11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        gy11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gy11ActionPerformed(evt);
+            }
+        });
         panel24.add(gy11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 70, 70));
 
         panel8.add(panel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 70, 400));
@@ -773,16 +1358,20 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 380, 220, 220));
 
+        T1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 24)); // NOI18N
+        panel1.add(T1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 260, 220, 60));
+        panel1.add(T2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 130, 210, 60));
+
         getContentPane().add(panel1, java.awt.BorderLayout.CENTER);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-        Icon iconred=new ImageIcon("G:\\Downloads\\x-mark-red-64 .png");
-        Icon iconyellow=new ImageIcon("G:\\Downloads\\x-mark-yellow-64 .png");
-        Icon icongreen=new ImageIcon("G:\\Downloads\\x-mark-green-64.png");
-        Icon iconblue=new ImageIcon("G:\\Downloads\\x-mark-blue-64 .png");
-        Icon iconmiddle=new ImageIcon("C:\\Users\\Sourav\\Downloads\\brooo.png");
+        Icon iconred=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\x-mark-48 (1).png");
+        Icon iconyellow=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\x-mark-48.png");
+        Icon icongreen=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\x-mark-48 (3).png");
+        Icon iconblue=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\x-mark-48 (2).png");
+        Icon iconmiddle=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\");
            
         Icon icondiceone=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-one.png");
         Icon icondicetwo=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-two.png");
@@ -792,10 +1381,31 @@ public class UI1 extends javax.swing.JFrame{
         Icon icondicesix=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-six.png");
         int dicenum;
         int chance=0;
+        int currentval;
+        pawn yy1=new pawn(1,0,1,0);
+        pawn yy2=new pawn(2,0,1,0);
+        pawn yy3=new pawn(3,0,1,0);
+        pawn yy4=new pawn(4,0,1,0);
+        pawn rr1=new pawn(5,0,2,0);
+        pawn rr2=new pawn(6,0,2,0);
+        pawn rr3=new pawn(7,0,2,0);
+        pawn rr4=new pawn(8,0,2,0);
+        pawn bb1=new pawn(9,0,3,0);
+        pawn bb2=new pawn(10,0,3,0);
+        pawn bb3=new pawn(11,0,3,0);
+        pawn bb4=new pawn(12,0,3,0);
+        pawn gg1=new pawn(13,0,4,0);
+        pawn gg2=new pawn(14,0,4,0);
+        pawn gg3=new pawn(15,0,4,0);
+        pawn gg4=new pawn(16,0,4,0);
         
+        
+    // Clicklistener click= new Clicklistener();
            
     private void yr13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr13ActionPerformed
-        // TODO add your handling code here:
+    valuecheck(currentval,dicenum);
+       yr13.setIcon(null);
+       yr13.setEnabled(false);
     }//GEN-LAST:event_yr13ActionPerformed
 
        
@@ -816,11 +1426,478 @@ public class UI1 extends javax.swing.JFrame{
             case 5: jButton5.setIcon(icondicefive);break;
             case 6: jButton5.setIcon(icondicesix);break;
         }
+        
         dicer(dicenum);
+        //jButton5.setEnabled(false);
         
         
     }//GEN-LAST:event_jButton5ActionPerformed
+//yellow house played
+    private void y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y1ActionPerformed
+        y1.setIcon(null);
+        y1.setEnabled(false);
+        yy1=play(yy1,dicenum);
+        
+    }//GEN-LAST:event_y1ActionPerformed
 
+    private void y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y2ActionPerformed
+        y2.setEnabled(false);
+        y2.setIcon(null);
+        yy2= play(yy2,dicenum);
+    }//GEN-LAST:event_y2ActionPerformed
+
+    private void y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y3ActionPerformed
+        y3.setEnabled(false);
+        y3.setIcon(null);
+        yy3=play(yy3,dicenum);
+    }//GEN-LAST:event_y3ActionPerformed
+
+    private void y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y4ActionPerformed
+        y4.setEnabled(false);
+        y4.setIcon(null);
+        yy4=play(yy4,dicenum);
+    }//GEN-LAST:event_y4ActionPerformed
+//red house played
+    private void r1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r1ActionPerformed
+
+        r1.setIcon(null);
+        r1.setEnabled(false);
+        rr1=play(rr1,dicenum);
+    }//GEN-LAST:event_r1ActionPerformed
+
+    private void r2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
+        r2.setIcon(null);
+        r2.setEnabled(false);
+        rr2=play(rr2,dicenum);
+        
+    }//GEN-LAST:event_r2ActionPerformed
+
+    private void r3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r3ActionPerformed
+         r3.setIcon(null);
+        r3.setEnabled(false);
+        rr3=play(rr3,dicenum);
+       
+    }//GEN-LAST:event_r3ActionPerformed
+
+    private void r4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r4ActionPerformed
+         r4.setIcon(null);
+        r4.setEnabled(false);
+        rr4=play(rr4,dicenum);
+       
+    }//GEN-LAST:event_r4ActionPerformed
+//blue house played
+    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
+         b1.setIcon(null);
+         b1.setEnabled(false);
+        bb1=play(bb1,dicenum);
+        
+    }//GEN-LAST:event_b1ActionPerformed
+
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+           b2.setIcon(null);
+          b2.setEnabled(false);
+        bb2=play(bb2,dicenum);
+         
+    }//GEN-LAST:event_b2ActionPerformed
+
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
+         b3.setIcon(null);
+         b3.setEnabled(false);
+        bb3=play(bb3,dicenum);
+        
+    }//GEN-LAST:event_b3ActionPerformed
+
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
+          b4.setIcon(null);
+         b4.setEnabled(false);
+        bb4=play(bb4,dicenum);
+         
+    }//GEN-LAST:event_b4ActionPerformed
+//green house played
+    private void g1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g1ActionPerformed
+           g1.setIcon(null);
+         g1.setEnabled(false);
+        gg1=play(gg1,dicenum);
+       
+    }//GEN-LAST:event_g1ActionPerformed
+
+    private void g2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g2ActionPerformed
+        g2.setIcon(null);
+         g2.setEnabled(false);
+        gg2=play(gg2,dicenum);
+        
+    }//GEN-LAST:event_g2ActionPerformed
+
+    private void g3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g3ActionPerformed
+        g3.setIcon(null);
+         g3.setEnabled(false);
+        gg3=play(gg3,dicenum);
+        
+    }//GEN-LAST:event_g3ActionPerformed
+
+    private void g4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g4ActionPerformed
+         g4.setIcon(null);
+         g4.setEnabled(false);
+        gg4=play(gg4,dicenum);
+       
+    }//GEN-LAST:event_g4ActionPerformed
+
+    private void yr1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr1ActionPerformed
+       yr1.setIcon(null);
+       yr1.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_yr1ActionPerformed
+
+    private void yr2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr2ActionPerformed
+     yr2.setIcon(null);
+       yr2.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_yr2ActionPerformed
+
+    private void yr3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr3ActionPerformed
+      yr3.setIcon(null);
+       yr3.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_yr3ActionPerformed
+
+    private void yr4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr4ActionPerformed
+      yr4.setIcon(null);
+       yr4.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_yr4ActionPerformed
+
+    private void yr5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr5ActionPerformed
+     yr5.setIcon(null);
+       yr5.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_yr5ActionPerformed
+
+    private void yr6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr6ActionPerformed
+        yr6.setIcon(null);
+       yr6.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_yr6ActionPerformed
+
+    private void yr7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr7ActionPerformed
+       valuecheck(currentval,dicenum);
+       yr7.setIcon(null);
+       yr7.setEnabled(false);
+    }//GEN-LAST:event_yr7ActionPerformed
+
+    private void yr8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr8ActionPerformed
+       yr8.setIcon(null);
+       yr8.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_yr8ActionPerformed
+
+    private void yr9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr9ActionPerformed
+       valuecheck(currentval,dicenum);
+       yr9.setIcon(null);
+       yr9.setEnabled(false);
+    }//GEN-LAST:event_yr9ActionPerformed
+
+    private void yr10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr10ActionPerformed
+       yr10.setIcon(null);
+       yr10.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_yr10ActionPerformed
+
+    private void yr11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr11ActionPerformed
+       yr11.setIcon(null);
+       yr11.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_yr11ActionPerformed
+
+    private void yr12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr12ActionPerformed
+        yr12.setIcon(null);
+       yr12.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_yr12ActionPerformed
+
+    private void rb7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb7ActionPerformed
+        rb7.setIcon(null);
+       rb7.setEnabled(false); 
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb7ActionPerformed
+
+    private void rb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb1ActionPerformed
+         rb1.setIcon(null);
+       rb1.setEnabled(false);
+        valuecheck(currentval,dicenum);
+     
+    }//GEN-LAST:event_rb1ActionPerformed
+
+    private void rb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb2ActionPerformed
+       rb2.setIcon(null);
+       rb2.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb2ActionPerformed
+
+    private void rb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb3ActionPerformed
+       rb3.setIcon(null);
+       rb3.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb3ActionPerformed
+
+    private void rb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb4ActionPerformed
+      rb4.setIcon(null);
+       rb4.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb4ActionPerformed
+
+    private void rb5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb5ActionPerformed
+       rb5.setIcon(null);
+       rb5.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb5ActionPerformed
+
+    private void rb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb6ActionPerformed
+        rb6.setIcon(null);
+       rb6.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb6ActionPerformed
+
+    private void rb8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb8ActionPerformed
+      rb8.setIcon(null);
+       rb8.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb8ActionPerformed
+
+    private void rb9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb9ActionPerformed
+         rb9.setIcon(null);
+       rb9.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_rb9ActionPerformed
+
+    private void rb10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb10ActionPerformed
+        rb10.setIcon(null);
+       rb10.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb10ActionPerformed
+
+    private void rb11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb11ActionPerformed
+        rb11.setIcon(null);
+       rb11.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_rb11ActionPerformed
+
+    private void rb12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb12ActionPerformed
+      rb12.setIcon(null);
+       rb12.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb12ActionPerformed
+
+    private void rb13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb13ActionPerformed
+        rb13.setIcon(null);
+       rb13.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_rb13ActionPerformed
+
+    private void bg1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg1ActionPerformed
+        bg1.setIcon(null);
+       bg1.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_bg1ActionPerformed
+
+    private void bg2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg2ActionPerformed
+        bg2.setIcon(null);
+       bg2.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_bg2ActionPerformed
+
+    private void bg3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg3ActionPerformed
+      bg3.setIcon(null);
+       bg3.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_bg3ActionPerformed
+
+    private void bg4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg4ActionPerformed
+         bg4.setIcon(null);
+       bg4.setEnabled(false);
+        valuecheck(currentval,dicenum);
+     
+    }//GEN-LAST:event_bg4ActionPerformed
+
+    private void bg5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg5ActionPerformed
+       bg5.setIcon(null);
+       bg5.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_bg5ActionPerformed
+
+    private void bg6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg6ActionPerformed
+     bg6.setIcon(null);
+       bg6.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_bg6ActionPerformed
+
+    private void bg7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg7ActionPerformed
+      bg7.setIcon(null);
+       bg7.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_bg7ActionPerformed
+
+    private void bg8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg8ActionPerformed
+      bg8.setIcon(null);
+       bg8.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_bg8ActionPerformed
+
+    private void bg9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg9ActionPerformed
+      bg9.setIcon(null);
+       bg9.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_bg9ActionPerformed
+
+    private void bg10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg10ActionPerformed
+      bg10.setIcon(null);
+       bg10.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_bg10ActionPerformed
+
+    private void bg11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg11ActionPerformed
+      bg11.setIcon(null);
+       bg11.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_bg11ActionPerformed
+
+    private void bg12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg12ActionPerformed
+        bg12.setIcon(null);
+       bg12.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_bg12ActionPerformed
+
+    private void bg13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg13ActionPerformed
+       bg13.setIcon(null);
+       bg13.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_bg13ActionPerformed
+
+    private void gy1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy1ActionPerformed
+      gy1.setIcon(null);
+       gy1.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy1ActionPerformed
+
+    private void gy2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy2ActionPerformed
+    gy2.setIcon(null);
+       gy2.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_gy2ActionPerformed
+
+    private void gy3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy3ActionPerformed
+     gy3.setIcon(null);
+       gy3.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy3ActionPerformed
+
+    private void gy4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy4ActionPerformed
+    gy4.setIcon(null);
+       gy4.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy4ActionPerformed
+
+    private void gy6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy6ActionPerformed
+     gy6.setIcon(null);
+       gy6.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy6ActionPerformed
+
+    private void gy5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy5ActionPerformed
+      gy5.setIcon(null);
+       gy5.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_gy5ActionPerformed
+
+    private void gy7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy7ActionPerformed
+       gy7.setIcon(null);
+       gy7.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy7ActionPerformed
+
+    private void gy8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy8ActionPerformed
+       gy8.setIcon(null);
+       gy8.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_gy8ActionPerformed
+
+    private void gy9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy9ActionPerformed
+       gy9.setIcon(null);
+       gy9.setEnabled(false);
+        valuecheck(currentval,dicenum);
+      
+    }//GEN-LAST:event_gy9ActionPerformed
+
+    private void gy10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy10ActionPerformed
+      gy10.setIcon(null);
+       gy10.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy10ActionPerformed
+
+    private void gy11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy11ActionPerformed
+     gy11.setIcon(null);
+       gy11.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy11ActionPerformed
+
+    private void gy12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy12ActionPerformed
+      gy12.setIcon(null);
+       gy12.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy12ActionPerformed
+
+    private void gy13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy13ActionPerformed
+      gy13.setIcon(null);
+       gy13.setEnabled(false);
+        valuecheck(currentval,dicenum);
+       
+    }//GEN-LAST:event_gy13ActionPerformed
+
+    
     /**
      * @param args the command line arguments
      */
@@ -857,10 +1934,12 @@ public class UI1 extends javax.swing.JFrame{
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton b1;
-    private javax.swing.JButton b2;
-    private javax.swing.JButton b3;
-    private javax.swing.JButton b4;
+    private javax.swing.JTextField T1;
+    private javax.swing.JTextField T2;
+    public javax.swing.JButton b1;
+    public javax.swing.JButton b2;
+    public javax.swing.JButton b3;
+    public javax.swing.JButton b4;
     private javax.swing.JButton bg1;
     private javax.swing.JButton bg10;
     private javax.swing.JButton bg11;
@@ -874,10 +1953,10 @@ public class UI1 extends javax.swing.JFrame{
     private javax.swing.JButton bg7;
     private javax.swing.JButton bg8;
     private javax.swing.JButton bg9;
-    private javax.swing.JButton g1;
-    private javax.swing.JButton g2;
-    private javax.swing.JButton g3;
-    private javax.swing.JButton g4;
+    public javax.swing.JButton g1;
+    public javax.swing.JButton g2;
+    public javax.swing.JButton g3;
+    public javax.swing.JButton g4;
     private javax.swing.JButton gy1;
     private javax.swing.JButton gy10;
     private javax.swing.JButton gy11;
@@ -940,12 +2019,12 @@ public class UI1 extends javax.swing.JFrame{
     private java.awt.Panel panel8;
     private java.awt.Panel panel9;
     public javax.swing.JButton r1;
-    private javax.swing.JButton r2;
-    private javax.swing.JButton r3;
-    private javax.swing.JButton r4;
+    public javax.swing.JButton r2;
+    public javax.swing.JButton r3;
+    public javax.swing.JButton r4;
     private javax.swing.JButton rb1;
     private javax.swing.JButton rb10;
-    private javax.swing.JButton rb11;
+    public javax.swing.JButton rb11;
     private javax.swing.JButton rb12;
     private javax.swing.JButton rb13;
     private javax.swing.JButton rb2;
@@ -956,22 +2035,22 @@ public class UI1 extends javax.swing.JFrame{
     private javax.swing.JButton rb7;
     private javax.swing.JButton rb8;
     private javax.swing.JButton rb9;
-    private javax.swing.JButton y1;
-    private javax.swing.JButton y2;
-    private javax.swing.JButton y3;
-    private javax.swing.JButton y4;
-    private javax.swing.JButton yr1;
-    private javax.swing.JButton yr10;
-    private javax.swing.JButton yr11;
-    private javax.swing.JButton yr12;
-    private javax.swing.JButton yr13;
-    private javax.swing.JButton yr2;
-    private javax.swing.JButton yr3;
-    private javax.swing.JButton yr4;
-    private javax.swing.JButton yr5;
+    public javax.swing.JButton y1;
+    public javax.swing.JButton y2;
+    public javax.swing.JButton y3;
+    public javax.swing.JButton y4;
+    public javax.swing.JButton yr1;
+    public javax.swing.JButton yr10;
+    public javax.swing.JButton yr11;
+    public javax.swing.JButton yr12;
+    public javax.swing.JButton yr13;
+    public javax.swing.JButton yr2;
+    public javax.swing.JButton yr3;
+    public javax.swing.JButton yr4;
+    public javax.swing.JButton yr5;
     private javax.swing.JButton yr6;
     private javax.swing.JButton yr7;
-    private javax.swing.JButton yr8;
-    private javax.swing.JButton yr9;
+    public javax.swing.JButton yr8;
+    public javax.swing.JButton yr9;
     // End of variables declaration//GEN-END:variables
 }
