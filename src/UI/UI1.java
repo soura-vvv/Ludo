@@ -80,63 +80,82 @@ public class UI1 extends javax.swing.JFrame{
         }
         switch(x1.pos)
         {
-            case 1:yr1.setIcon(whatcolour);yr1.setEnabled(true);break;
-            case 14:rb1.setIcon(whatcolour);rb1.setEnabled(true);break;
-            case 27:bg1.setIcon(whatcolour);bg1.setEnabled(true);break;
-            case 40:gy1.setIcon(whatcolour);gy1.setEnabled(true);break;
+            case 1:yr1.setIcon(whatcolour);yr1.setDisabledIcon(whatcolour);break;
+            case 14:rb1.setIcon(whatcolour);rb1.setDisabledIcon(whatcolour);break;
+            case 27:bg1.setIcon(whatcolour);bg1.setDisabledIcon(whatcolour);break;
+            case 40:gy1.setIcon(whatcolour);gy1.setDisabledIcon(whatcolour);break;
             
-            case 2:yr2.setIcon(whatcolour);yr2.setEnabled(true);break;
-            case 3:yr3.setIcon(whatcolour);yr3.setEnabled(true);break;
-            case 4:yr4.setIcon(whatcolour);yr4.setEnabled(true);break;
-            case 5:yr5.setIcon(whatcolour);yr5.setEnabled(true);break;
-            case 6:yr6.setIcon(whatcolour);yr6.setEnabled(true);break;
-            case 7:yr7.setIcon(whatcolour);yr7.setEnabled(true);break;
-            case 8:yr8.setIcon(whatcolour);yr8.setEnabled(true);break;
-            case 9:yr9.setIcon(whatcolour);yr9.setEnabled(true);break;
-            case 10:yr10.setIcon(whatcolour);yr10.setEnabled(true);break;
-            case 11:yr11.setIcon(whatcolour);yr11.setEnabled(true);break;
-            case 12:yr12.setIcon(whatcolour);yr12.setEnabled(true);break;
-            case 13:yr13.setIcon(whatcolour);yr13.setEnabled(true);break;
+            case 2:yr2.setIcon(whatcolour);yr2.setDisabledIcon(whatcolour);break;
+            case 3:yr3.setIcon(whatcolour);yr3.setDisabledIcon(whatcolour);break;
+            case 4:yr4.setIcon(whatcolour);yr4.setDisabledIcon(whatcolour);break;
+            case 5:yr5.setIcon(whatcolour);yr5.setDisabledIcon(whatcolour);break;
+            case 6:yr6.setIcon(whatcolour);yr6.setDisabledIcon(whatcolour);break;
+            case 7:yr7.setIcon(whatcolour);yr7.setDisabledIcon(whatcolour);break;
+            case 8:yr8.setIcon(whatcolour);yr8.setDisabledIcon(whatcolour);break;
+            case 9:yr9.setIcon(whatcolour);yr9.setDisabledIcon(whatcolour);break;
+            case 10:yr10.setIcon(whatcolour);yr10.setDisabledIcon(whatcolour);break;
+            case 11:yr11.setIcon(whatcolour);yr11.setDisabledIcon(whatcolour);break;
+            case 12:yr12.setIcon(whatcolour);yr12.setDisabledIcon(whatcolour);break;
+            case 13:yr13.setIcon(whatcolour);yr13.setDisabledIcon(whatcolour);break;
             
-            case 15:rb2.setIcon(whatcolour);rb2.setEnabled(true);break;
-            case 16:rb3.setIcon(whatcolour);rb3.setEnabled(true);break;
-            case 17:rb4.setIcon(whatcolour);rb4.setEnabled(true);break;
-            case 18:rb5.setIcon(whatcolour);rb5.setEnabled(true);break;
-            case 19:rb6.setIcon(whatcolour);rb6.setEnabled(true);break;
-            case 20:rb7.setIcon(whatcolour);rb7.setEnabled(true);break;
-            case 21:rb8.setIcon(whatcolour);rb8.setEnabled(true);break;
-            case 22:rb9.setIcon(whatcolour);rb9.setEnabled(true);break;
-            case 23:rb10.setIcon(whatcolour);rb10.setEnabled(true);break;
-            case 24:rb11.setIcon(whatcolour);rb11.setEnabled(true);break;
-            case 25:rb12.setIcon(whatcolour);rb12.setEnabled(true);break;
-            case 26:rb13.setIcon(whatcolour);rb13.setEnabled(true);break;
+            case 15:rb2.setIcon(whatcolour);rb2.setDisabledIcon(whatcolour);break;
+            case 16:rb3.setIcon(whatcolour);rb3.setDisabledIcon(whatcolour);break;
+            case 17:rb4.setIcon(whatcolour);rb4.setDisabledIcon(whatcolour);break;
+            case 18:rb5.setIcon(whatcolour);rb5.setDisabledIcon(whatcolour);break;
+            case 19:rb6.setIcon(whatcolour);rb6.setDisabledIcon(whatcolour);break;
+            case 20:rb7.setIcon(whatcolour);rb7.setDisabledIcon(whatcolour);break;
+            case 21:rb8.setIcon(whatcolour);rb8.setDisabledIcon(whatcolour);break;
+            case 22:rb9.setIcon(whatcolour);rb9.setDisabledIcon(whatcolour);break;
+            case 23:rb10.setIcon(whatcolour);rb10.setDisabledIcon(whatcolour);break;
+            case 24:rb11.setIcon(whatcolour);rb11.setDisabledIcon(whatcolour);break;
+            case 25:rb12.setIcon(whatcolour);rb12.setDisabledIcon(whatcolour);break;
+            case 26:rb13.setIcon(whatcolour);rb13.setDisabledIcon(whatcolour);break;
             
-            case 28:bg2.setIcon(whatcolour);bg2.setEnabled(true);break;
-            case 29:bg3.setIcon(whatcolour);bg3.setEnabled(true);break;
-            case 30:bg4.setIcon(whatcolour);bg4.setEnabled(true);break;
-            case 31:bg5.setIcon(whatcolour);bg5.setEnabled(true);break;
-            case 32:bg6.setIcon(whatcolour);bg6.setEnabled(true);break;
-            case 33:bg7.setIcon(whatcolour);bg7.setEnabled(true);break;
-            case 34:bg8.setIcon(whatcolour);bg8.setEnabled(true);break;
-            case 35:bg9.setIcon(whatcolour);bg9.setEnabled(true);break;
-            case 36:bg10.setIcon(whatcolour);bg10.setEnabled(true);break;
-            case 37:bg11.setIcon(whatcolour);bg11.setEnabled(true);break;
-            case 38:bg12.setIcon(whatcolour);bg12.setEnabled(true);break;
-            case 39:bg13.setIcon(whatcolour);bg13.setEnabled(true);break;
+            case 28:bg2.setIcon(whatcolour);bg2.setDisabledIcon(whatcolour);break;
+            case 29:bg3.setIcon(whatcolour);bg3.setDisabledIcon(whatcolour);break;
+            case 30:bg4.setIcon(whatcolour);bg4.setDisabledIcon(whatcolour);break;
+            case 31:bg5.setIcon(whatcolour);bg5.setDisabledIcon(whatcolour);break;
+            case 32:bg6.setIcon(whatcolour);bg6.setDisabledIcon(whatcolour);break;
+            case 33:bg7.setIcon(whatcolour);bg7.setDisabledIcon(whatcolour);break;
+            case 34:bg8.setIcon(whatcolour);bg8.setDisabledIcon(whatcolour);break;
+            case 35:bg9.setIcon(whatcolour);bg9.setDisabledIcon(whatcolour);break;
+            case 36:bg10.setIcon(whatcolour);bg10.setDisabledIcon(whatcolour);break;
+            case 37:bg11.setIcon(whatcolour);bg11.setDisabledIcon(whatcolour);break;
+            case 38:bg12.setIcon(whatcolour);bg12.setDisabledIcon(whatcolour);break;
+            case 39:bg13.setIcon(whatcolour);bg13.setDisabledIcon(whatcolour);break;
             
-            case 41:gy2.setIcon(whatcolour);gy2.setEnabled(true);break;
-            case 42:gy3.setIcon(whatcolour);gy3.setEnabled(true);break;
-            case 43:gy4.setIcon(whatcolour);gy4.setEnabled(true);break;
-            case 44:gy5.setIcon(whatcolour);gy5.setEnabled(true);break;
-            case 45:gy6.setIcon(whatcolour);gy6.setEnabled(true);break;
-            case 46:gy7.setIcon(whatcolour);gy7.setEnabled(true);break;
-            case 47:gy8.setIcon(whatcolour);gy8.setEnabled(true);break;
-            case 48:gy9.setIcon(whatcolour);gy9.setEnabled(true);break;
-            case 49:gy10.setIcon(whatcolour);gy10.setEnabled(true);break;
-            case 50:gy11.setIcon(whatcolour);gy11.setEnabled(true);break;
-            case 51:gy12.setIcon(whatcolour);gy12.setEnabled(true);break;
-            case 52:gy13.setIcon(whatcolour);gy13.setEnabled(true);break;
+            case 41:gy2.setIcon(whatcolour);gy2.setDisabledIcon(whatcolour);break;
+            case 42:gy3.setIcon(whatcolour);gy3.setDisabledIcon(whatcolour);break;
+            case 43:gy4.setIcon(whatcolour);gy4.setDisabledIcon(whatcolour);break;
+            case 44:gy5.setIcon(whatcolour);gy5.setDisabledIcon(whatcolour);break;
+            case 45:gy6.setIcon(whatcolour);gy6.setDisabledIcon(whatcolour);break;
+            case 46:gy7.setIcon(whatcolour);gy7.setDisabledIcon(whatcolour);break;
+            case 47:gy8.setIcon(whatcolour);gy8.setDisabledIcon(whatcolour);break;
+            case 48:gy9.setIcon(whatcolour);gy9.setDisabledIcon(whatcolour);break;
+            case 49:gy10.setIcon(whatcolour);gy10.setDisabledIcon(whatcolour);break;
+            case 50:gy11.setIcon(whatcolour);gy11.setDisabledIcon(whatcolour);break;
+            case 51:gy12.setIcon(whatcolour);gy12.setDisabledIcon(whatcolour);break;
+            case 52:gy13.setIcon(whatcolour);gy13.setDisabledIcon(whatcolour);break;
             
+            case 53:y1.setIcon(iconyellow);y1.setDisabledIcon(iconyellow);break;
+            case 54:y2.setIcon(iconyellow);y2.setDisabledIcon(iconyellow);break;
+            case 55:y3.setIcon(iconyellow);y3.setDisabledIcon(iconyellow);break;
+            case 56:y4.setIcon(iconyellow);y4.setDisabledIcon(iconyellow);break;
+            
+            case 57:r1.setIcon(iconred);r1.setDisabledIcon(iconred);break;
+            case 58:r2.setIcon(iconred);r2.setDisabledIcon(iconred);break;
+            case 59:r3.setIcon(iconred);r3.setDisabledIcon(iconred);break;
+            case 60:r4.setIcon(iconred);r4.setDisabledIcon(iconred);break;
+            
+            case 61:b1.setIcon(iconblue);b1.setDisabledIcon(iconblue);break;
+            case 62:b2.setIcon(iconblue);b2.setDisabledIcon(iconblue);break;
+            case 63:b3.setIcon(iconblue);b3.setDisabledIcon(iconblue);break;
+            case 64:b4.setIcon(iconblue);b4.setDisabledIcon(iconblue);break;
+            
+            case 65:g1.setIcon(icongreen);g1.setDisabledIcon(icongreen);break;
+            case 66:g2.setIcon(icongreen);g2.setDisabledIcon(icongreen);break;
+            case 67:g3.setIcon(icongreen);g3.setDisabledIcon(icongreen);break;
+            case 68:g4.setIcon(icongreen);g4.setDisabledIcon(icongreen);break;
         }
         
         
@@ -161,6 +180,77 @@ public class UI1 extends javax.swing.JFrame{
         displayscreen(gg4);
         
     }
+    pawn freehome(pawn d1,int coloi)
+    {
+        switch(coloi)
+        {
+            case 1:
+            {
+                if(yy1.pos!=53)
+                    d1.pos=53;
+                else if(yy2.pos!=54)
+                    d1.pos=54;
+                else if(yy3.pos!=55)
+                    d1.pos=55;
+                else if(yy4.pos!=56)
+                    d1.pos=56;
+                break;
+                
+            }
+            case 2:
+            {
+                 if(rr1.pos!=57)
+                    d1.pos=57;
+                else if(rr2.pos!=58)
+                    d1.pos=58;
+                else if(rr3.pos!=59)
+                    d1.pos=59;
+                else if(rr4.pos!=60)
+                    d1.pos=60;
+                break;
+            }
+            case 3:
+            {
+                 if(bb1.pos!=61)
+                    d1.pos=61;
+                else if(bb2.pos!=62)
+                    d1.pos=62;
+                else if(bb3.pos!=63)
+                    d1.pos=63;
+                else if(bb4.pos!=64)
+                    d1.pos=64;
+                break;
+            }
+            case 4:
+            {
+                 if(gg1.pos!=65)
+                    d1.pos=65;
+                else if(gg2.pos!=66)
+                    d1.pos=66;
+                else if(gg3.pos!=67)
+                    d1.pos=67;
+                else if(gg4.pos!=68)
+                    d1.pos=68;
+                break;
+                
+            }
+        }
+        return d1;
+    }
+    pawn killchecker(pawn m1,pawn m2,int lame)
+    {
+        if(m2.pos==lame)
+        {
+            if(m2.col!=m1.col)
+            {
+                m2.inside=0;
+               m2=freehome(m2,m2.col);
+               //m2.pos=0;
+                chance--;
+            }
+        }
+        return m2;
+    }
     pawn play(pawn p1,int distance)
     {
        if(p1.inside==0)
@@ -177,14 +267,35 @@ public class UI1 extends javax.swing.JFrame{
           
            p1.inside=1;
            
-       }
-       else
+       }    
+        else
        {
+           
+            
+          int bam=p1.pos+distance;
+          yy1=killchecker(p1,yy1,bam); 
+          yy2=killchecker(p1,yy2,bam);
+          yy3=killchecker(p1,yy3,bam);
+          yy4=killchecker(p1,yy4,bam); 
+          rr1=killchecker(p1,rr1,bam);
+          rr2=killchecker(p1,rr2,bam);
+          rr3=killchecker(p1,rr3,bam); 
+          rr4=killchecker(p1,rr4,bam);
+          bb1=killchecker(p1,bb1,bam);
+          bb2=killchecker(p1,bb2,bam); 
+          bb3=killchecker(p1,bb3,bam);
+          bb4=killchecker(p1,bb4,bam);
+          gg1=killchecker(p1,gg1,bam);
+          gg2=killchecker(p1,gg2,bam); 
+          gg3=killchecker(p1,gg3,bam);
+          gg4=killchecker(p1,gg4,bam);
+          
+          
            p1.pos=p1.pos+distance;
            if(p1.pos>52)
                p1.pos=(p1.pos)-52;
            displayboard();
-          
+          jButton5.setEnabled(true);
        }
        
         
@@ -205,9 +316,50 @@ public class UI1 extends javax.swing.JFrame{
         }
         return f1;
     }
+    pawn checkersafe(pawn f1,int pal,int farther)
+    {   int colouriser;
+        if(chance==0)
+            colouriser=4;
+        else 
+            colouriser=chance;
+        if(f1.col==colouriser)
+        {
+            for(int i=1;i<53;i++)
+            {
+                if(pal==f1.pos)
+                {
+                    f1=play(f1,farther);
+                }
+            }
+        }
+            
+        return f1;
+    }
     void valuecheck(int val,int far)
-    {   fid=0;
-        checker(yy1,val,far);
+    {   
+       if(val==1 || val==9 || val==14 || val==22 || val==27 || val==35 || val==40 || val==48)
+    {
+       yy1=checkersafe(yy1,val,far);
+       yy2=checkersafe(yy2,val,far);
+       yy3=checkersafe(yy3,val,far);
+       yy4=checkersafe(yy4,val,far);
+       rr1=checkersafe(rr1,val,far);
+       rr2=checkersafe(rr2,val,far);
+       rr3=checkersafe(rr3,val,far);
+       rr4=checkersafe(rr4,val,far);
+       bb1=checkersafe(bb1,val,far);
+       bb2=checkersafe(bb2,val,far);
+       bb3=checkersafe(bb3,val,far);
+       bb4=checkersafe(bb4,val,far);
+       gg1=checkersafe(gg1,val,far);
+       gg2=checkersafe(gg2,val,far);
+       gg3=checkersafe(gg3,val,far);
+       gg4=checkersafe(gg4,val,far);       
+    }
+      else
+        {
+         fid=0;
+            checker(yy1,val,far);
         if(fid==0)
             checker(yy2,val,far);
         if(fid==0)
@@ -238,6 +390,9 @@ public class UI1 extends javax.swing.JFrame{
             checker(gg3,val,far);
         if(fid==0)
             checker(gg4,val,far);
+        }
+       
+        
     }
    void disableAll()
    {
@@ -334,28 +489,97 @@ public class UI1 extends javax.swing.JFrame{
           }
        }
    }
+   void enabler(pawn c1)
+   {
+       if(c1.inside==1)
+       {
+          switch(c1.pos)
+          {
+            case 1:yr1.setEnabled(true);break;
+            case 14:rb1.setEnabled(true);break;
+            case 27:bg1.setEnabled(true);break;
+            case 40:gy1.setEnabled(true);break;
+            
+            case 2:yr2.setEnabled(true);break;
+            case 3:yr3.setEnabled(true);break;
+            case 4:yr4.setEnabled(true);break;
+            case 5:yr5.setEnabled(true);break;
+            case 6:yr6.setEnabled(true);break;
+            case 7:yr7.setEnabled(true);break;
+            case 8:yr8.setEnabled(true);break;
+            case 9:yr9.setEnabled(true);break;
+            case 10:yr10.setEnabled(true);break;
+            case 11:yr11.setEnabled(true);break;
+            case 12:yr12.setEnabled(true);break;
+            case 13:yr13.setEnabled(true);break;
+            
+            case 15:rb2.setEnabled(true);break;
+            case 16:rb3.setEnabled(true);break;
+            case 17:rb4.setEnabled(true);break;
+            case 18:rb5.setEnabled(true);break;
+            case 19:rb6.setEnabled(true);break;
+            case 20:rb7.setEnabled(true);break;
+            case 21:rb8.setEnabled(true);break;
+            case 22:rb9.setEnabled(true);break;
+            case 23:rb10.setEnabled(true);break;
+            case 24:rb11.setEnabled(true);break;
+            case 25:rb12.setEnabled(true);break;
+            case 26:rb13.setEnabled(true);break;
+            
+            case 28:bg2.setEnabled(true);break;
+            case 29:bg3.setEnabled(true);break;
+            case 30:bg4.setEnabled(true);break;
+            case 31:bg5.setEnabled(true);break;
+            case 32:bg6.setEnabled(true);break;
+            case 33:bg7.setEnabled(true);break;
+            case 34:bg8.setEnabled(true);break;
+            case 35:bg9.setEnabled(true);break;
+            case 36:bg10.setEnabled(true);break;
+            case 37:bg11.setEnabled(true);break;
+            case 38:bg12.setEnabled(true);break;
+            case 39:bg13.setEnabled(true);break;
+            
+            case 41:gy2.setEnabled(true);break;
+            case 42:gy3.setEnabled(true);break;
+            case 43:gy4.setEnabled(true);break;
+            case 44:gy5.setEnabled(true);break;
+            case 45:gy6.setEnabled(true);break;
+            case 46:gy7.setEnabled(true);break;
+            case 47:gy8.setEnabled(true);break;
+            case 48:gy9.setEnabled(true);break;
+            case 49:gy10.setEnabled(true);break;
+            case 50:gy11.setEnabled(true);break;
+            case 51:gy12.setEnabled(true);break;
+            case 52:gy13.setEnabled(true);break;
+              
+          }
+       }
+      
+  
+   }
    void dicer(int howfar)
    {
+       jButton5.setEnabled(false);
        switch(chance)
         {
             case 0://Yellow Plays
             {
-                disableAll();
+                
+                    
                 T1.setText("Player : Yellow");
                 T1.setBackground(new java.awt.Color(255, 255, 0));
                 if(howfar!=6)
                     chance++;
-                switch(howfar)
-                    {
-                    case 1:break;
-                    case 2:break;
-                    case 3:break;
-                    case 4:break;
-                    case 5:break;
-                    case 6:enableYellow(5);break;
-                
+               
+                if(yy1.inside==0 && yy2.inside==0 &&  yy3.inside==0 && yy4.inside==0)
+                    jButton5.setEnabled(true);
+                    else
+                    {    
+                        enabler(yy1);
+                        enabler(yy2);
+                        enabler(yy3);
+                        enabler(yy4);
                     }
-                
                 break;
             }
                
@@ -366,16 +590,15 @@ public class UI1 extends javax.swing.JFrame{
                 T1.setBackground(new java.awt.Color(204, 0, 51));
                 if(howfar!=6)
                     chance++;
-                switch(howfar)
-                {
-                    case 1:break;
-                    case 2:break;
-                    case 3:break;
-                    case 4:break;
-                    case 5:break;
-                    case 6:enableRed(5);break;
-                    
-                }
+                if(yy1.inside==0 && yy2.inside==0 &&  yy3.inside==0 && yy4.inside==0)
+                    jButton5.setEnabled(true);
+                    else
+                    {    
+                        enabler(yy1);
+                        enabler(yy2);
+                        enabler(yy3);
+                        enabler(yy4);
+                    }
                 break;
             }
                
@@ -388,12 +611,24 @@ public class UI1 extends javax.swing.JFrame{
                     chance++;
                  switch(howfar)
                  {
-                    case 1:break;
-                    case 2:break;
-                    case 3:break;
-                    case 4:break;
-                    case 5:break;
-                    case 6:enableBlue(5);break;
+                    case 6:
+                    {
+                       enableBlue(5);
+                        break;
+                    }
+                    default:
+                    {
+                        if(bb1.inside==0 && bb2.inside==0 && bb3.inside==0 && bb4.inside==0)
+                            jButton5.setEnabled(true);
+                        else
+                        {
+                            enabler(bb1);
+                             enabler(bb2);
+                              enabler(bb3);
+                               enabler(bb4);
+                               
+                        }
+                    }
                  }
                  break;
             }
@@ -406,12 +641,25 @@ public class UI1 extends javax.swing.JFrame{
                     chance=0;
                  switch(howfar)
                  {
-                    case 1:break;
-                    case 2:break;
-                    case 3:break;
-                    case 4:break;
-                    case 5:break;
-                    case 6:enableGreen(5);break;
+                   case 6:
+                    {
+                       
+                        enableGreen(5);
+                        break;
+                    }
+                   default:
+                   {
+                       
+                        if(gg1.inside==0 && gg2.inside==0 && gg3.inside==0 && gg4.inside==0)
+                            jButton5.setEnabled(true);
+                        else
+                        {
+                            enabler(gg1);
+                            enabler(gg2);
+                            enabler(gg3);
+                            enabler(gg4);
+                        }
+                   }
                  }
                  break;
             }
@@ -423,31 +671,12 @@ public class UI1 extends javax.swing.JFrame{
         initComponents();
        setSize(1400,1200);
         setLocationRelativeTo(null);
+        
         setup();
         
         
-         
-        //jButton89.setIcon(iconmiddle);
-       /* jButton6.setIcon(iconred);
-        //jButton30.setIcon(iconblue);*/
-       // jButton66.setIcon(iconred);
-        
-    /*    Icon icondiceone=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-one.png");
-        Icon icondiceotwo=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-two.png");
-        Icon icondicethree=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-three.png");
-        Icon icondicefour=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-four.png");
-        Icon icondicefive=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-five.png");
-        Icon icondicesix=new ImageIcon("F:\\Programming\\Ludo_OOP-Proj\\dice-six-faces-six.png");
-        */
-        
-        //jButton6.
-       
-      /* Border blackline;
-      
-       blackline=BorderFactory.createLineBorder(Color.black);
-       panel3.setBorder(blackline);*/
-      
-        
+ 
+     
     }
 
     /**
@@ -593,6 +822,7 @@ public class UI1 extends javax.swing.JFrame{
         panel9.setBackground(new java.awt.Color(153, 153, 153));
         panel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        r1.setEnabled(false);
         r1.setBackground(new java.awt.Color(204, 204, 204));
         r1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         r1.addActionListener(new java.awt.event.ActionListener() {
@@ -602,6 +832,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel9.add(r1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
+        r3.setEnabled(false);
         r3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         r3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -610,6 +841,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel9.add(r3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
+        r2.setEnabled(false);
         r2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         r2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -618,6 +850,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel9.add(r2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
+        r4.setEnabled(false);
         r4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         r4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -636,6 +869,7 @@ public class UI1 extends javax.swing.JFrame{
         panel12.setBackground(new java.awt.Color(0, 0, 0));
         panel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        y1.setEnabled(false);
         y1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         y1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -644,6 +878,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel12.add(y1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
+        y2.setEnabled(false);
         y2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         y2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -652,6 +887,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel12.add(y2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
+        y3.setEnabled(false);
         y3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         y3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -660,6 +896,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel12.add(y3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
+        y4.setEnabled(false);
         y4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         y4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -836,6 +1073,7 @@ public class UI1 extends javax.swing.JFrame{
         panel10.setBackground(new java.awt.Color(0, 0, 0));
         panel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        b1.setEnabled(false);
         b1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -844,6 +1082,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel10.add(b1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
+        b2.setEnabled(false);
         b2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         b2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -852,6 +1091,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel10.add(b2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
+        b3.setEnabled(false);
         b3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         b3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -860,6 +1100,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel10.add(b3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
+        b4.setEnabled(false);
         b4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         b4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1192,6 +1433,7 @@ public class UI1 extends javax.swing.JFrame{
         panel11.setBackground(new java.awt.Color(0, 0, 0));
         panel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        g1.setEnabled(false);
         g1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         g1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1200,6 +1442,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel11.add(g1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
 
+        g2.setEnabled(false);
         g2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         g2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1208,6 +1451,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel11.add(g2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 100, 100));
 
+        g3.setEnabled(false);
         g3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         g3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1216,6 +1460,7 @@ public class UI1 extends javax.swing.JFrame{
         });
         panel11.add(g3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 100, 100));
 
+        g4.setEnabled(false);
         g4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 4));
         g4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1430,30 +1675,30 @@ public class UI1 extends javax.swing.JFrame{
         int chance=0;
         int currentval;
         int fid=0;
-        pawn yy1=new pawn(1,0,1,0);
-        pawn yy2=new pawn(2,0,1,0);
-        pawn yy3=new pawn(3,0,1,0);
-        pawn yy4=new pawn(4,0,1,0);
-        pawn rr1=new pawn(5,0,2,0);
-        pawn rr2=new pawn(6,0,2,0);
-        pawn rr3=new pawn(7,0,2,0);
-        pawn rr4=new pawn(8,0,2,0);
-        pawn bb1=new pawn(9,0,3,0);
-        pawn bb2=new pawn(10,0,3,0);
-        pawn bb3=new pawn(11,0,3,0);
-        pawn bb4=new pawn(12,0,3,0);
-        pawn gg1=new pawn(13,0,4,0);
-        pawn gg2=new pawn(14,0,4,0);
-        pawn gg3=new pawn(15,0,4,0);
-        pawn gg4=new pawn(16,0,4,0);
+        pawn yy1=new pawn(1,53,1,0);
+        pawn yy2=new pawn(2,54,1,0);
+        pawn yy3=new pawn(3,55,1,0);
+        pawn yy4=new pawn(4,56,1,0);
+        pawn rr1=new pawn(5,57,2,0);
+        pawn rr2=new pawn(6,58,2,0);
+        pawn rr3=new pawn(7,59,2,0);
+        pawn rr4=new pawn(8,60,2,0);
+        pawn bb1=new pawn(9,61,3,0);
+        pawn bb2=new pawn(10,62,3,0);
+        pawn bb3=new pawn(11,63,3,0);
+        pawn bb4=new pawn(12,64,3,0);
+        pawn gg1=new pawn(13,65,4,0);
+        pawn gg2=new pawn(14,66,4,0);
+        pawn gg3=new pawn(15,67,4,0);
+        pawn gg4=new pawn(16,68,4,0);
         
-        
+      //  UI1.setIcon(icondicefive);
     // Clicklistener click= new Clicklistener();
            
     private void yr13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr13ActionPerformed
-    
+     yr13.setEnabled(false);
        yr13.setIcon(null);
-       yr13.setEnabled(false);
+      yr13.setDisabledIcon(null);
        valuecheck(13,dicenum);
     }//GEN-LAST:event_yr13ActionPerformed
 
@@ -1483,265 +1728,297 @@ public class UI1 extends javax.swing.JFrame{
     }//GEN-LAST:event_jButton5ActionPerformed
 //yellow house played
     private void y1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y1ActionPerformed
-        y1.setIcon(null);
-        y1.setEnabled(false);
-        yy1=play(yy1,dicenum);
         
+        y1.setEnabled(false);
+        y1.setIcon(null);
+      y1.setDisabledIcon(null);
+       yy1=play(yy1,dicenum);
+
     }//GEN-LAST:event_y1ActionPerformed
 
     private void y2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y2ActionPerformed
         y2.setEnabled(false);
         y2.setIcon(null);
+          y2.setDisabledIcon(null);
         yy2= play(yy2,dicenum);
     }//GEN-LAST:event_y2ActionPerformed
 
     private void y3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y3ActionPerformed
         y3.setEnabled(false);
         y3.setIcon(null);
+          y3.setDisabledIcon(null);
         yy3=play(yy3,dicenum);
     }//GEN-LAST:event_y3ActionPerformed
 
     private void y4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_y4ActionPerformed
         y4.setEnabled(false);
         y4.setIcon(null);
+          y4.setDisabledIcon(null);
         yy4=play(yy4,dicenum);
     }//GEN-LAST:event_y4ActionPerformed
 //red house played
     private void r1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r1ActionPerformed
-
-        r1.setIcon(null);
         r1.setEnabled(false);
+        r1.setIcon(null);
+        r1.setDisabledIcon(null);
         rr1=play(rr1,dicenum);
     }//GEN-LAST:event_r1ActionPerformed
 
     private void r2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r2ActionPerformed
-        r2.setIcon(null);
         r2.setEnabled(false);
+        r2.setIcon(null);
+        r2.setDisabledIcon(null);
         rr2=play(rr2,dicenum);
-        
     }//GEN-LAST:event_r2ActionPerformed
 
     private void r3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r3ActionPerformed
-         r3.setIcon(null);
-        r3.setEnabled(false);
+      r3.setEnabled(false);
+        r3.setIcon(null);
+        r3.setDisabledIcon(null);
         rr3=play(rr3,dicenum);
-       
     }//GEN-LAST:event_r3ActionPerformed
 
     private void r4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r4ActionPerformed
-         r4.setIcon(null);
-        r4.setEnabled(false);
+         r4.setEnabled(false);
+        r4.setIcon(null);
+        r4.setDisabledIcon(null);
         rr4=play(rr4,dicenum);
        
     }//GEN-LAST:event_r4ActionPerformed
 //blue house played
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
-         b1.setIcon(null);
-         b1.setEnabled(false);
+        b1.setEnabled(false);
+        b1.setIcon(null);
+        b1.setDisabledIcon(null);
         bb1=play(bb1,dicenum);
-        
     }//GEN-LAST:event_b1ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
-           b2.setIcon(null);
-          b2.setEnabled(false);
-        bb2=play(bb2,dicenum);
-         
+        b2.setEnabled(false);
+        b2.setIcon(null);
+        b2.setDisabledIcon(null);
+        bb2=play(bb2,dicenum); 
     }//GEN-LAST:event_b2ActionPerformed
 
     private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
-         b3.setIcon(null);
          b3.setEnabled(false);
+        b3.setIcon(null);
+        b3.setDisabledIcon(null);
         bb3=play(bb3,dicenum);
-        
     }//GEN-LAST:event_b3ActionPerformed
 
     private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
-          b4.setIcon(null);
          b4.setEnabled(false);
+        b4.setIcon(null);
+        b4.setDisabledIcon(null);
         bb4=play(bb4,dicenum);
-         
     }//GEN-LAST:event_b4ActionPerformed
 //green house played
     private void g1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g1ActionPerformed
-           g1.setIcon(null);
-         g1.setEnabled(false);
+        g1.setEnabled(false);
+        g1.setIcon(null);
+        g1.setDisabledIcon(null);
         gg1=play(gg1,dicenum);
-       
     }//GEN-LAST:event_g1ActionPerformed
 
     private void g2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g2ActionPerformed
+        g2.setEnabled(false);
         g2.setIcon(null);
-         g2.setEnabled(false);
-        gg2=play(gg2,dicenum);
-        
+        g2.setDisabledIcon(null);
+        gg2=play(gg2,dicenum);        
     }//GEN-LAST:event_g2ActionPerformed
 
     private void g3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g3ActionPerformed
+        g3.setEnabled(false);
         g3.setIcon(null);
-         g3.setEnabled(false);
+        g3.setDisabledIcon(null);
         gg3=play(gg3,dicenum);
-        
     }//GEN-LAST:event_g3ActionPerformed
 
     private void g4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g4ActionPerformed
-         g4.setIcon(null);
-         g4.setEnabled(false);
+        g4.setEnabled(false);
+        g4.setIcon(null);
+        g4.setDisabledIcon(null);
         gg4=play(gg4,dicenum);
-       
     }//GEN-LAST:event_g4ActionPerformed
 
     private void yr1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr1ActionPerformed
-       yr1.setIcon(null);
-       yr1.setEnabled(false);
+        yr1.setEnabled(false);
+        yr1.setIcon(null);
+      yr1.setDisabledIcon(null);
         valuecheck(1,dicenum);
       
     }//GEN-LAST:event_yr1ActionPerformed
 
     private void yr2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr2ActionPerformed
-     yr2.setIcon(null);
-       yr2.setEnabled(false);
+      yr2.setEnabled(false);
+        yr2.setIcon(null);
+      yr2.setDisabledIcon(null);
         valuecheck(2,dicenum);
        
     }//GEN-LAST:event_yr2ActionPerformed
 
     private void yr3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr3ActionPerformed
-      yr3.setIcon(null);
        yr3.setEnabled(false);
+        yr3.setIcon(null);
+      yr3.setDisabledIcon(null);
         valuecheck(3,dicenum);
        
     }//GEN-LAST:event_yr3ActionPerformed
 
     private void yr4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr4ActionPerformed
-      yr4.setIcon(null);
        yr4.setEnabled(false);
+        yr4.setIcon(null);
+      yr4.setDisabledIcon(null);
         valuecheck(4,dicenum);
       
     }//GEN-LAST:event_yr4ActionPerformed
 
     private void yr5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr5ActionPerformed
-     yr5.setIcon(null);
        yr5.setEnabled(false);
+        yr5.setIcon(null);
+    yr5.setDisabledIcon(null);
         valuecheck(5,dicenum);
        
     }//GEN-LAST:event_yr5ActionPerformed
 
     private void yr6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr6ActionPerformed
+          yr6.setEnabled(false);
         yr6.setIcon(null);
-       yr6.setEnabled(false);
+     yr6.setDisabledIcon(null);
         valuecheck(6,dicenum);
       
     }//GEN-LAST:event_yr6ActionPerformed
 
     private void yr7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr7ActionPerformed
        
-       yr7.setIcon(null);
-       yr7.setEnabled(false);
+        yr7.setEnabled(false);
+        yr7.setIcon(null);
+      yr7.setDisabledIcon(null);
        valuecheck(7,dicenum);
     }//GEN-LAST:event_yr7ActionPerformed
 
     private void yr8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr8ActionPerformed
-       yr8.setIcon(null);
        yr8.setEnabled(false);
+        yr8.setIcon(null);
+       yr8.setDisabledIcon(null);
         valuecheck(8,dicenum);
        
     }//GEN-LAST:event_yr8ActionPerformed
 
     private void yr9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr9ActionPerformed
-     
+     yr9.setEnabled(false);
        yr9.setIcon(null);
-       yr9.setEnabled(false);
+       yr9.setDisabledIcon(null);
          valuecheck(9,dicenum);
     }//GEN-LAST:event_yr9ActionPerformed
 
     private void yr10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr10ActionPerformed
-       
-        yr10.setIcon(null);
        yr10.setEnabled(false);
+        yr10.setIcon(null);
+       yr10.setDisabledIcon(null);
         valuecheck(10,dicenum);
        
     }//GEN-LAST:event_yr10ActionPerformed
 
     private void yr11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr11ActionPerformed
-       yr11.setIcon(null);
-       yr11.setEnabled(false);
+        yr11.setEnabled(false);
+        yr11.setIcon(null);
+      yr11.setDisabledIcon(null);
         valuecheck(11,dicenum);
       
     }//GEN-LAST:event_yr11ActionPerformed
 
     private void yr12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yr12ActionPerformed
+         yr12.setEnabled(false);
         yr12.setIcon(null);
-       yr12.setEnabled(false);
+      yr12.setDisabledIcon(null);
         valuecheck(12,dicenum);
       
     }//GEN-LAST:event_yr12ActionPerformed
 
     private void rb7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb7ActionPerformed
+        rb7.setEnabled(false); 
         rb7.setIcon(null);
-       rb7.setEnabled(false); 
+      rb7.setDisabledIcon(null);
         valuecheck(20,dicenum);
        
     }//GEN-LAST:event_rb7ActionPerformed
 
     private void rb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb1ActionPerformed
-         rb1.setIcon(null);
-       rb1.setEnabled(false);
+         rb1.setIcon(null); 
+        rb1.setEnabled(false); 
+       
+      rb1.setDisabledIcon(null);
         valuecheck(14,dicenum);
      
     }//GEN-LAST:event_rb1ActionPerformed
 
     private void rb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb2ActionPerformed
-       rb2.setIcon(null);
-       rb2.setEnabled(false);
+        rb2.setEnabled(false);
+        rb2.setIcon(null);
+      rb2.setDisabledIcon(null);
         valuecheck(15,dicenum);
        
     }//GEN-LAST:event_rb2ActionPerformed
 
     private void rb3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb3ActionPerformed
-       rb3.setIcon(null);
-       rb3.setEnabled(false);
+        rb3.setEnabled(false);
+        rb3.setIcon(null);
+      rb3.setDisabledIcon(null);
         valuecheck(16,dicenum);
        
     }//GEN-LAST:event_rb3ActionPerformed
 
     private void rb4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb4ActionPerformed
-      rb4.setIcon(null);
        rb4.setEnabled(false);
+        rb4.setIcon(null);
+      rb4.setDisabledIcon(null);
         valuecheck(17,dicenum);
        
     }//GEN-LAST:event_rb4ActionPerformed
 
     private void rb5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb5ActionPerformed
-       rb5.setIcon(null);
-       rb5.setEnabled(false);
+      rb5.setIcon(null);
+        rb5.setEnabled(false);
+        
+       rb5.setDisabledIcon(null);
         valuecheck(18,dicenum);
        
     }//GEN-LAST:event_rb5ActionPerformed
 
     private void rb6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb6ActionPerformed
-        rb6.setIcon(null);
-       rb6.setEnabled(false);
+         rb6.setIcon(null); 
+        rb6.setEnabled(false);
+       
+      rb6.setDisabledIcon(null);
         valuecheck(19,dicenum);
        
     }//GEN-LAST:event_rb6ActionPerformed
 
     private void rb8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb8ActionPerformed
-      rb8.setIcon(null);
-       rb8.setEnabled(false);
+       rb8.setIcon(null);
+        rb8.setEnabled(false);
+       
+       rb8.setDisabledIcon(null);
         valuecheck(21,dicenum);
        
     }//GEN-LAST:event_rb8ActionPerformed
 
     private void rb9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb9ActionPerformed
-         rb9.setIcon(null);
-       rb9.setEnabled(false);
+        rb9.setIcon(null);
+        rb9.setEnabled(false); 
+       
+       rb9.setDisabledIcon(null);
         valuecheck(22,dicenum);
       
     }//GEN-LAST:event_rb9ActionPerformed
 
     private void rb10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb10ActionPerformed
         rb10.setIcon(null);
-       rb10.setEnabled(false);
+        rb10.setEnabled(false);
+        
+       rb10.setDisabledIcon(null);
         valuecheck(23,dicenum);
        
     }//GEN-LAST:event_rb10ActionPerformed
@@ -1749,6 +2026,7 @@ public class UI1 extends javax.swing.JFrame{
     private void rb11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb11ActionPerformed
         rb11.setIcon(null);
        rb11.setEnabled(false);
+       rb11.setDisabledIcon(null);
         valuecheck(24,dicenum);
       
     }//GEN-LAST:event_rb11ActionPerformed
@@ -1756,6 +2034,7 @@ public class UI1 extends javax.swing.JFrame{
     private void rb12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb12ActionPerformed
       rb12.setIcon(null);
        rb12.setEnabled(false);
+       rb12.setDisabledIcon(null);
         valuecheck(25,dicenum);
        
     }//GEN-LAST:event_rb12ActionPerformed
@@ -1763,6 +2042,7 @@ public class UI1 extends javax.swing.JFrame{
     private void rb13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb13ActionPerformed
         rb13.setIcon(null);
        rb13.setEnabled(false);
+       rb13.setDisabledIcon(null);
         valuecheck(26,dicenum);
        
     }//GEN-LAST:event_rb13ActionPerformed
@@ -1770,6 +2050,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg1ActionPerformed
         bg1.setIcon(null);
        bg1.setEnabled(false);
+       bg1.setDisabledIcon(null);
         valuecheck(27,dicenum);
       
     }//GEN-LAST:event_bg1ActionPerformed
@@ -1777,6 +2058,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg2ActionPerformed
         bg2.setIcon(null);
        bg2.setEnabled(false);
+        bg2.setDisabledIcon(null);
         valuecheck(28,dicenum);
       
     }//GEN-LAST:event_bg2ActionPerformed
@@ -1784,6 +2066,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg3ActionPerformed
       bg3.setIcon(null);
        bg3.setEnabled(false);
+        bg3.setDisabledIcon(null);
         valuecheck(29,dicenum);
        
     }//GEN-LAST:event_bg3ActionPerformed
@@ -1791,6 +2074,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg4ActionPerformed
          bg4.setIcon(null);
        bg4.setEnabled(false);
+        bg4.setDisabledIcon(null);
         valuecheck(30,dicenum);
      
     }//GEN-LAST:event_bg4ActionPerformed
@@ -1798,6 +2082,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg5ActionPerformed
        bg5.setIcon(null);
        bg5.setEnabled(false);
+        bg5.setDisabledIcon(null);
         valuecheck(31,dicenum);
        
     }//GEN-LAST:event_bg5ActionPerformed
@@ -1805,6 +2090,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg6ActionPerformed
      bg6.setIcon(null);
        bg6.setEnabled(false);
+        bg6.setDisabledIcon(null);
         valuecheck(32,dicenum);
        
     }//GEN-LAST:event_bg6ActionPerformed
@@ -1812,6 +2098,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg7ActionPerformed
       bg7.setIcon(null);
        bg7.setEnabled(false);
+        bg7.setDisabledIcon(null);
         valuecheck(33,dicenum);
        
     }//GEN-LAST:event_bg7ActionPerformed
@@ -1819,6 +2106,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg8ActionPerformed
       bg8.setIcon(null);
        bg8.setEnabled(false);
+        bg8.setDisabledIcon(null);
         valuecheck(34,dicenum);
       
     }//GEN-LAST:event_bg8ActionPerformed
@@ -1826,6 +2114,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg9ActionPerformed
       bg9.setIcon(null);
        bg9.setEnabled(false);
+        bg9.setDisabledIcon(null);
         valuecheck(35,dicenum);
       
     }//GEN-LAST:event_bg9ActionPerformed
@@ -1833,6 +2122,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg10ActionPerformed
       bg10.setIcon(null);
        bg10.setEnabled(false);
+        bg10.setDisabledIcon(null);
         valuecheck(36,dicenum);
        
     }//GEN-LAST:event_bg10ActionPerformed
@@ -1840,6 +2130,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg11ActionPerformed
       bg11.setIcon(null);
        bg11.setEnabled(false);
+        bg11.setDisabledIcon(null);
         valuecheck(37,dicenum);
        
     }//GEN-LAST:event_bg11ActionPerformed
@@ -1847,6 +2138,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg12ActionPerformed
         bg12.setIcon(null);
        bg12.setEnabled(false);
+        bg12.setDisabledIcon(null);
         valuecheck(38,dicenum);
       
     }//GEN-LAST:event_bg12ActionPerformed
@@ -1854,6 +2146,7 @@ public class UI1 extends javax.swing.JFrame{
     private void bg13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bg13ActionPerformed
        bg13.setIcon(null);
        bg13.setEnabled(false);
+        bg13.setDisabledIcon(null);
         valuecheck(39,dicenum);
       
     }//GEN-LAST:event_bg13ActionPerformed
@@ -1861,6 +2154,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy1ActionPerformed
       gy1.setIcon(null);
        gy1.setEnabled(false);
+        gy1.setDisabledIcon(null);
         valuecheck(40,dicenum);
        
     }//GEN-LAST:event_gy1ActionPerformed
@@ -1868,6 +2162,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy2ActionPerformed
     gy2.setIcon(null);
        gy2.setEnabled(false);
+        gy2.setDisabledIcon(null);
         valuecheck(41,dicenum);
       
     }//GEN-LAST:event_gy2ActionPerformed
@@ -1875,6 +2170,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy3ActionPerformed
      gy3.setIcon(null);
        gy3.setEnabled(false);
+        gy3.setDisabledIcon(null);
         valuecheck(42,dicenum);
        
     }//GEN-LAST:event_gy3ActionPerformed
@@ -1882,6 +2178,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy4ActionPerformed
     gy4.setIcon(null);
        gy4.setEnabled(false);
+        gy4.setDisabledIcon(null);
         valuecheck(43,dicenum);
        
     }//GEN-LAST:event_gy4ActionPerformed
@@ -1889,20 +2186,23 @@ public class UI1 extends javax.swing.JFrame{
     private void gy6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy6ActionPerformed
      gy6.setIcon(null);
        gy6.setEnabled(false);
-        valuecheck(44,dicenum);
+        gy6.setDisabledIcon(null);
+        valuecheck(45,dicenum);
        
     }//GEN-LAST:event_gy6ActionPerformed
 
     private void gy5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy5ActionPerformed
       gy5.setIcon(null);
        gy5.setEnabled(false);
-        valuecheck(45,dicenum);
+        gy5.setDisabledIcon(null);
+        valuecheck(44,dicenum);
       
     }//GEN-LAST:event_gy5ActionPerformed
 
     private void gy7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy7ActionPerformed
        gy7.setIcon(null);
        gy7.setEnabled(false);
+        gy7.setDisabledIcon(null);
         valuecheck(46,dicenum);
        
     }//GEN-LAST:event_gy7ActionPerformed
@@ -1910,6 +2210,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy8ActionPerformed
        gy8.setIcon(null);
        gy8.setEnabled(false);
+        gy8.setDisabledIcon(null);
         valuecheck(47,dicenum);
       
     }//GEN-LAST:event_gy8ActionPerformed
@@ -1917,6 +2218,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy9ActionPerformed
        gy9.setIcon(null);
        gy9.setEnabled(false);
+        gy9.setDisabledIcon(null);
         valuecheck(48,dicenum);
       
     }//GEN-LAST:event_gy9ActionPerformed
@@ -1924,6 +2226,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy10ActionPerformed
       gy10.setIcon(null);
        gy10.setEnabled(false);
+        gy10.setDisabledIcon(null);
         valuecheck(49,dicenum);
        
     }//GEN-LAST:event_gy10ActionPerformed
@@ -1931,6 +2234,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy11ActionPerformed
      gy11.setIcon(null);
        gy11.setEnabled(false);
+        gy11.setDisabledIcon(null);
         valuecheck(50,dicenum);
        
     }//GEN-LAST:event_gy11ActionPerformed
@@ -1938,6 +2242,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy12ActionPerformed
       gy12.setIcon(null);
        gy12.setEnabled(false);
+        gy12.setDisabledIcon(null);
         valuecheck(51,dicenum);
        
     }//GEN-LAST:event_gy12ActionPerformed
@@ -1945,6 +2250,7 @@ public class UI1 extends javax.swing.JFrame{
     private void gy13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gy13ActionPerformed
       gy13.setIcon(null);
        gy13.setEnabled(false);
+        gy13.setDisabledIcon(null);
         valuecheck(52,dicenum);
        
     }//GEN-LAST:event_gy13ActionPerformed
@@ -1981,6 +2287,7 @@ public class UI1 extends javax.swing.JFrame{
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new UI1().setVisible(true);
+                
             }
         });
     }
