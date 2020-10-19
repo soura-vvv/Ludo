@@ -21,10 +21,10 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 class pawn
 {
-    public int value;
-    public int pos;
-    public int col;
-    public int inside;
+    private int value;
+     int pos;
+     int col;
+     int inside;
     pawn(int a,int b,int c,int d)
     {
         value=a;
